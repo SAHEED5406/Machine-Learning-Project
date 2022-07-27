@@ -2,7 +2,7 @@ import os
 import sys
 class HousingException(Exception):
     
-    def __init__(self,error_message:Exception ,error_detail:sys):
+    def __init__(self,error_message,error_detail):
         super().__init__(error_message)
 
         self.error_message = HousingException.get_detailed_error_message(error_message = error_message ,
@@ -29,4 +29,4 @@ class HousingException(Exception):
         return self.error_message
 
     def __repr__(self):
-        return HousingException.__name.str()
+        return HousingException.__name__.str()
