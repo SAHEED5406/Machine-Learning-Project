@@ -3,4 +3,7 @@ gunicorn
 sklearn
 pandas
 numpy
+yaml
+six
+tarfile
 -e .
