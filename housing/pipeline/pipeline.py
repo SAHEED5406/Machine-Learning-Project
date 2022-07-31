@@ -35,7 +35,7 @@ class Pipeline:
 
     def start_model_evaluation(self):
         pass
-    
+
     def start_model_pusher(self):
         pass
 
@@ -45,6 +45,3 @@ class Pipeline:
             return data_ingestion_artifact
         except Exception as e:
             raise HousingException(e,sys)
-
-    
-

@@ -90,7 +90,7 @@ class DataIngestion:
 
             split = StratifiedShuffleSplit(n_splits=1 , test_size=0.2,random_state=42)
 
-            for train_index , test_index in split.split(housing_data_frame ,groups= housing_data_frame["income_cat"]):
+            for train_index , test_index in split.split(housing_data_frame ,housing_data_frame["income_cat"]):
                 strat_train_set = housing_data_frame.loc[train_index].drop(columns=["income_cat"] ,axis= 1)
                 strat_test_set = housing_data_frame.loc[test_index].drop(columns=["income_cat"] ,axis= 1)
 
