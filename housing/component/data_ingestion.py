@@ -127,7 +127,7 @@ class DataIngestion:
 
 
     def __del__(self):
-        logging.info(f"{'='*20} data ingestion log completd {'='*20} \n \n ")
+        logging.info(f"{'='*20} data ingestion log completed {'='*20} \n \n ")
 
 
 
