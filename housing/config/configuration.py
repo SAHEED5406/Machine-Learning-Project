@@ -28,6 +28,7 @@ class Configuration:
 
         try :
 
+
             data_ingestion_config = self.config_info[DATA_INGESTION_CONFIG_key]
 
             dataset_download_url = data_ingestion_config[DATA_INGESTION_DOWNLOAD_URL_KEY]
@@ -58,7 +59,7 @@ class Configuration:
                                                         
 
         except Exception as e :
-            raise HousingException(e,sys)
+            raise HousingException(e,sys) from e
 
     def get_data_validation_config(self) ->DataValidationConfig:
 
